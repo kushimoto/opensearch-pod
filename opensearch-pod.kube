@@ -1,0 +1,12 @@
+[Unit]
+Description=OpenSearch Pod
+
+[Kube]
+Yaml=/opt/opensearch-pod/opensearch-pod.yaml
+Network=slirp4netns
+
+[Service]
+Environment="PULL_POLICY=never"
+
+[Install]
+WantedBy=network-online.target
