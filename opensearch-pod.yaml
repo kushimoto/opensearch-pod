@@ -51,8 +51,15 @@ spec:
     volumeMounts:
     - mountPath: /usr/share/opensearch/data
       name: opt-opensearch-pod-data-app-host-0
+    - mountPath: /usr/share/opensearch/plugins:Z
+      name: opt-opensearch-pod-data-plugins-host-0
   volumes:
   - hostPath:
       path: /opt/opensearch-pod/data/app
       type: Directory
     name: opt-opensearch-pod-data-app-host-0
+  - hostPath:
+      path: /opt/opensearch-pod/data/plugins
+      type: Directory
+    name: opt-opensearch-pod-data-plugins-host-0
+

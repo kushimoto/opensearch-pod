@@ -59,6 +59,17 @@ semanage port -a -t http_port_t -p tcp 9200
 semanage port -a -t http_port_t -p tcp 5601
 ```
 
+### 日本語用プラグイン追加 (オプション)
+
+日本語のデータを全文検索するのに役立つそうです。
+(dashboardsを日本語化するわけではございません)
+
+```shell
+podman exec -ti opensearch-app bash
+/usr/share/opensearch/bin/opensearch-plugin install analysis-kuromoji
+/usr/share/opensearch/bin/opensearch-plugin install analysis-icu
+```
+
 ### メモ欄
 
 - Podを作る
