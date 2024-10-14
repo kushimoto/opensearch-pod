@@ -50,7 +50,7 @@ systemctl start opensearch-pod.service
 
 ### ログイン
 
-http://{サーバーのIPアドレス}}:8002 にアクセスして admin/admin でログインできます。
+http://{サーバーのIPアドレス}}:5601 にアクセスして admin/l%zglAd6Cc9p でログインできます。
 
 selinux が有効な場合は下記コマンドが必要かもしれない。(ファイアウォールはまだ検索しやすいので書かないぞ :heart: )
 
